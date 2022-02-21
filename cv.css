@@ -1,0 +1,30 @@
+.corps{
+  border: 2px solid red;
+  width: 70%;
+  height: 210vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gauche{
+  border: 2px solid;
+  width: 30%;
+  height: 200vh;
+}
+
+.droite{
+  border: 2px solid green;
+  width: 65%;
+  height: 200vh;
+}
+
+
+progress{
+  width: 20%;
+  height: 1vh;
+}
+
+body  p{
+  background-color: yellow;
+}

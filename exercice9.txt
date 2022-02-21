@@ -1,0 +1,39 @@
+Exercice 9 (A FAIRE)
+
+Algo: LONGUE_SEQUENCE
+
+variables:
+	  seq, seqmax : chaines de caracteres
+	  pos, sup, N, n, l, lmax, i : entiers
+
+debut
+	seq = seqmax = ""
+	sup = N = n = l = lmax = i = 0
+	pos = 1
+	tant que N < 10 OU N > 50 faire
+		ecrire("Entrer une valeur entre 10 et 50")
+		lire(N)
+	finTant
+	
+	pour i : 1 à N
+		ecrire("Entrer une valeur entre 1 et 100")
+		lire(n)
+		si n > sup
+			sup <-- n
+			l <-- l + 1
+			seq <-- seq + " " +n
+		sinon
+			si l > lmax
+				lmax <-- l
+				pos <-- i -l
+				seqmax <-- seq
+			finSi
+			
+			seq = " "+n
+			l = 1
+			sup = n
+		finSi
+	finPour
+	ecrire("la plus longue sequence croissante est " + seqmax)
+	ecrire("la position du premier element de la sequence est " + pos)
+fin
